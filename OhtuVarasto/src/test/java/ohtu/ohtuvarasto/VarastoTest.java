@@ -74,8 +74,7 @@ public class VarastoTest {
     @Test
     public void lisätäänVaanMaksimit() {
     	varasto.lisaaVarastoon(varasto.paljonkoMahtuu() + 2);
-    	assertTrue(false);
-    	//assertEquals(0, varasto.paljonkoMahtuu(), vertailuTarkkuus);
+    	assertEquals(0, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
     
     @Test
