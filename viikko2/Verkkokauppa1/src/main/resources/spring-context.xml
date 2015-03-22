@@ -9,32 +9,6 @@
     
     <context:annotation-config />
     <context:component-scan base-package="ohtu.verkkokauppa" />  
-    
-    <!--
-     
-    	Kirjanpito kirjanpito      = new Kirjanpito();
-    	Varasto varasto            = new Varasto(kirjanpito);
-	    Pankki pankki              = new Pankki(kirjanpito);
-	    Viitegeneraattori viitegen = new Viitegeneraattori();
-	    Kauppa kauppa              = new Kauppa(varasto, pankki, viitegen);
-    
-     -->
-     
-     <bean id="kirjanpito" class="ohtu.verkkokauppa.Kirjanpito"></bean>
-     <bean id="viitegeneraattori" class="ohtu.verkkokauppa.Viitegeneraattori"></bean>
-     
-     <bean id="varasto" class="ohtu.verkkokauppa.Varasto">
-     	<constructor-arg ref="varasto" />
-     </bean>
-     
-     <bean id="pankki" class="ohtu.verkkokauppa.Pankki">
-     	<constructor-arg ref="varasto" />
-     </bean>
-     
-     <bean id="kauppa" class="ohtu.verkkokauppa.Kauppa">
-     	<constructor-arg ref="varasto" />
-     	<constructor-arg ref="pankki" />
-     	<constructor-arg ref="viitegeneraattori" />
-     </bean>
+    <context:annotation-config></context:annotation-config>
     
 </beans>
