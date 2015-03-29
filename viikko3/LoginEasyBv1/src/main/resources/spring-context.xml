@@ -22,7 +22,8 @@
         
      -->
      
-    <bean id="userDao" class="ohtu.data_access.InMemoryUserDao">
+    <bean id="userDao" class="ohtu.data_access.FileUserDAO">
+    	<constructor-arg name="fileLocation" value="users" />
     </bean>
     <bean id="io" class="ohtu.io.ConsoleIO">
     </bean>
