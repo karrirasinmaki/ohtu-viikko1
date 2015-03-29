@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.1.1">
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Kirjanpito.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Varasto.java">
+<error line="14" severity="error" message="&apos;ctor def modifier&apos; have incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Kauppa.java">
+<error line="15" severity="error" message="&apos;ctor def modifier&apos; have incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Pankki.java">
+<error line="11" severity="error" message="&apos;ctor def modifier&apos; have incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Viitegeneraattori.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Ostoskori.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Kirjanpito.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Varasto.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Kauppa.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Pankki.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Viitegeneraattori.java">
+</file>
+<file name="/home/karrirasinmaki/dev/uni/raka-ohtu/viikko2/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Ostoskori.java">
+</file>
+</checkstyle>
