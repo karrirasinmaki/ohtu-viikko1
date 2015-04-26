@@ -13,6 +13,8 @@ public class Tapahtumankuuntelija implements ActionListener {
     private JTextField tuloskentta;
     private JTextField syotekentta;
     private Sovelluslogiikka sovellus;
+    
+    private KomentoTehdas komentoTehdas;
  
     public Tapahtumankuuntelija(JButton plus, JButton miinus, JButton nollaa, JButton undo, JTextField tuloskentta, JTextField syotekentta) {
         this.plus = plus;
@@ -22,25 +24,21 @@ public class Tapahtumankuuntelija implements ActionListener {
         this.tuloskentta = tuloskentta;
         this.syotekentta = syotekentta;
         this.sovellus = new Sovelluslogiikka();
+        
+        this.komentoTehdas = new KomentoTehdas(sovellus, tuloskentta, syotekentta);
+        komentoTehdas.lisaa(plus, new Summa());
+        komentoTehdas.lisaa(miinus, new Erotus());
+        komentoTehdas.lisaa(nollaa, new Nollaa());
     }
     
     @Override
     public void actionPerformed(ActionEvent ae) {
-        int arvo = 0;
+    	Komento komento = komentoTehdas.hae(ae);
  
-        try {
-            arvo = Integer.parseInt(syotekentta.getText());
-        } catch (Exception e) {
-        }
- 
-        if (ae.getSource() == plus) {
-            sovellus.plus(arvo);
-        } else if (ae.getSource() == miinus) {
-            sovellus.miinus(arvo);
-        } else if (ae.getSource() == nollaa) {
-            sovellus.nollaa();
+        if (komento != null) {
+        	komento.suorita();
         } else {
-            System.out.println("undo pressed");
+            sovellus.edellinen();
         }
         
         int laskunTulos = sovellus.tulos();
