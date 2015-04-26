@@ -2,10 +2,18 @@ package ohtu;
 
 public class TennisGame {
     
-    private int m_score1 = 0;
-    private int m_score2 = 0;
+    private int player1Score = 0;
+    private int player2Score = 0;
     private String player1Name;
     private String player2Name;
+    
+    private String[] POINTS_DISPLAY_NAMES = { "Love", "Fifteen", "Thirty", "Forty" };
+    private String ALL = "All";
+    private String DEUCE = "Deuce";
+    private String ADVANTAGE_S = "Advantage %s";
+    private String WIN_FOR_S = "Win for %s";
+    
+    private int TARGET_POINTS = 4;
 
     public TennisGame(String player1Name, String player2Name) {
         this.player1Name = player1Name;
@@ -13,68 +21,29 @@ public class TennisGame {
     }
 
     public void wonPoint(String playerName) {
-        if (playerName == "player1")
-            m_score1 += 1;
+        if (playerName.equals(player1Name))
+            player1Score += 1;
         else
-            m_score2 += 1;
+            player2Score += 1;
+    }
+    
+    private String getPointDisplayName(int score) {
+    	if (POINTS_DISPLAY_NAMES.length <= score) {
+    		return POINTS_DISPLAY_NAMES[score];
+    	}
+    	return DEUCE;
     }
 
     public String getScore() {
-        String score = "";
-        int tempScore=0;
-        if (m_score1==m_score2)
+        if (player1Score>=TARGET_POINTS || player2Score>=TARGET_POINTS)
         {
-            switch (m_score1)
-            {
-                case 0:
-                        score = "Love-All";
-                    break;
-                case 1:
-                        score = "Fifteen-All";
-                    break;
-                case 2:
-                        score = "Thirty-All";
-                    break;
-                case 3:
-                        score = "Forty-All";
-                    break;
-                default:
-                        score = "Deuce";
-                    break;
-                
-            }
+        	int seperationRaw = player1Score - player2Score;
+            int seperation = Math.abs(seperationRaw);
+            String playerName = seperationRaw > 0 ? player1Name : player2Name;
+            if (seperation==1) return String.format(ADVANTAGE_S, playerName);
+            return String.format(WIN_FOR_S, playerName);
         }
-        else if (m_score1>=4 || m_score2>=4)
-        {
-            int minusResult = m_score1-m_score2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
-            else score ="Win for player2";
-        }
-        else
-        {
-            for (int i=1; i<3; i++)
-            {
-                if (i==1) tempScore = m_score1;
-                else { score+="-"; tempScore = m_score2;}
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
-            }
-        }
-        return score;
+        return getPointDisplayName(player1Score) + "-" + 
+        		(player1Score == player2Score ? ALL : getPointDisplayName(player2Score));
     }
 }
