@@ -1,0 +1,16 @@
+﻿Referaatti
+
+Kandidaatintutkielma
+Ohjelmistotuotantomenetelmien kehittyminen 1950-luvulta nykypäivään, 
+Lauri Suomalainen 2014
+
+Referoinut:
+Karri Rasinmäki 2015
+
+
+
+Lauri Suomalainen käy kandidaatintutkielmassaan läpi eri ohjelmistotuotantomenetelmien pääpiirteet sovelluskehityksen alkuajoilta, 1950-luvulta, nykypäivään ja pohtii lopuksi hieman tulevaisuuden tapoja tehdä ohjelmistokehitystä.
+
+Suomalainen havaitsee ohjelmistojen kehitysmenetelmien siirtyneen joustavampiin ja ketterämpiin menetelmiin , kuten iteratiiviset ja ketterät ohjelmistokehitysmenetelmät, samaan aikaan kuin internet yleistyi, eli 1990-luvun puolivälissä. Oli kyse sitten internetin merkityksestä kommunikointivälineenä, sovellusten globaali saatavuus ja verkon yli laajasti integrointuneet järjestelmät tai puhdas sattuma, huomattiin sovelluskehityksen olevan kankeaa ja epäkäytännöllistä perinteistä insinöörimäistä kehitystapaa hyödyntäen.
+
+Kandidaatintutkielma ei ota juurikaan kantaa siihen, mikä ohjelmistokehitysmenetelmä loppujen lopuksi on kaikkein toimivin, ja päättääkin tutkielman lauseeseen; “Ohjelmistotuotantomenetelmillä on vielä suuntia kehittyä, ja kehitystä ohjaavat niin tulevaisuuden haasteet kuin menneisyydestä opitut parhaat käytänteet.”

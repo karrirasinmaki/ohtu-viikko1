@@ -1,0 +1,19 @@
+﻿Referaatti
+
+Kandidaatintutkielma
+Ryhmätyö ohjelmistokehityksessä
+Kenny Heinonen 2013
+
+Referoinut:
+Karri Rasinmäki 2015
+
+
+
+
+Kenny Heinonen on koonnut tiivistäen tutkielmaansa ryhmätyön ja eri persoonallisuuksien vaikutusta ohjelmistokehityksessä. Tutkielma osoittaa eri tutkimusten perusteella ryhmätyön koulutuksen olevan tarpeettoman vähäistä tietojankäsittelytieteen yliopistokoulutuksessa. Lisäksi Heinonen käy läpi mitkä Myers–Briggsin tyyppi-indikaattorin mukaiset persoonallisuudet soveltuvat parhaiten mihinkin ohjelmistokehityksen työvaiheisiin.
+
+Ketterien ohjelmistokehitysmetodejen yleistyessä ja kasvattaessa suosiotaan, ryhmätyön merkitys korostuu yhtäläisesti. Esimerkiksi Scrum-tekniikka painottaa kehitysmallissaan tiimin itseohjautuvuuden ja sisäisen viestinnän tärkeyttä. Lisäksi ketterien menetelmien tuoma lähempi asiakaskohtaaminen vaatii erilaisia persoonia ja hyviä kommunikointitaitoja.
+
+Heinosen tutkielmassa esitetty Myers–Briggsin tyyppi-indikaattori tarjoaa 16 erilaista persoonallisuutta, luonteenpiirteet valittuina neljästä eri kategoriasta, joissa on kaksi toisilleen vastakkaista piirettä. Tutkielmassa kerrotaan jokaisen näistä 16 persoonallisuudesta soveltuvan kehitysprosessiin, toiset toista paremmin johonkin kehitysvaiheeseen kuin toiset.
+
+Tutkielman pääsisältö on ryhmätyön tarpeellisuus ja ryhmätyötaitojen kehittäminen tietojenkäsitteytieteen opetuksessa.
